@@ -1,6 +1,6 @@
-import React {Component} from 'react';
+import React, {Component} from 'react';
 
-class PostsIndex extends Component {
+export default class PostsIndex extends Component {
     render() {
         return (
             <div>
