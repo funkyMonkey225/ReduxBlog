@@ -16,9 +16,17 @@ class PostsNew extends Component {
         );
     }
 
+    onSubmit(values) {
+        // this === component
+        console.log(values);
+    }
+
     render() {
+        // handleSubmit property from reduxform being passed to component
+        const {handleSubmit} = this.props;
+
         return(
-            <form>
+            <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
                 <Field 
                     label="Title For Post"
                     name="title"
