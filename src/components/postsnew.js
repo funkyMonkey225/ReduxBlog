@@ -11,7 +11,7 @@ class PostsNew extends Component {
                     type="text"
                     {...field.input}
                 />
-                {field.meta.error}
+                {field.meta.touched ? field.meta.error : ''}
             </div>
         );
     }
@@ -47,6 +47,11 @@ class PostsNew extends Component {
         );
     }
 }
+
+// Redux Form input states
+// pristine == no input, no selection from user
+// touched == user has selected input then focused out of input
+// invalid == error message needs to be shown
 
 function validate(values) {
     const errors = {};
