@@ -24,8 +24,10 @@ class PostsNew extends Component {
     }
 
     onSubmit(values) {
-        // this === component
-        this.props.createPost(values);
+        // history.push automatically navigates to given route
+        this.props.createPost(values, () => {
+            this.props.history.push('/');
+        });
     }
 
     render() {
