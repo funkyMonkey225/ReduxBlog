@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {fetchPosts} from '../actions';
+// import Modal from './modal';
 
 class PostsIndex extends Component {
     componentDidMount() {
@@ -24,6 +25,11 @@ class PostsIndex extends Component {
     render() {
         return (
             <div>
+                {/*<Modal>
+                    <h1>A really long amount of modal content</h1>
+                    <p> etc.</p>
+                    <p> COOL </p>
+                </Modal>*/}
                 <div className="text-xs-right">
                     <Link className="btn btn-primary" to="/posts/new">
                         Add a Post
