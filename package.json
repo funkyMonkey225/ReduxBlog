@@ -30,6 +30,7 @@
     "hoek": "^5.0.3",
     "jquery": "^3.3.1",
     "lodash": "^3.10.1",
+    "node-growl": "^0.1.1",
     "react": "^0.14.9",
     "react-dom": "^0.14.9",
     "react-redux": "4.3.0",
